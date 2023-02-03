@@ -54,27 +54,6 @@
   flex-direction: column;
   padding-bottom: 0;
 }
-.hamburguerMenu {
-  padding-left: 20px;
-}
-.menu p {
-  width: 120px;
-  height: 90px;
-  background-color: aquamarine;
-  flex-direction: row;
-}
-.scrollDown {
-  width: 130px;
-  height: 20px;
-  transform: rotate(90deg);
-  margin-bottom: 60px;
-  padding-top: 50px;
-  cursor: pointer;
-}
-.hamburguerMenu .bx {
-  font-size: 5vh;
-  margin-top: 20px;
-}
 
 .parent {
   background-image: linear-gradient(
