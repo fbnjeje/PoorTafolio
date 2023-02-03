@@ -26,12 +26,18 @@
 .sideBarIcons {
   display: grid;
   gap: 20px;
+  animation-name: showIcons;
+  animation-duration: 2s;
 }
 .logoBegin i {
   padding-top: 20px;
+  font-size: 70px;
+  animation-name: showLogo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .logoBegin i {
-  font-size: 70px;
 }
 .a {
   display: block;
@@ -75,12 +81,13 @@
   font-size: 3vh;
   text-align: center;
 }
+
 .parent {
   background-image: linear-gradient(
       90deg,
-      rgba(255, 196, 13, 0.2) 0%,
-      rgba(253, 190, 29, 0.5) 10%,
-      rgba(242, 115, 30, 0.6) 100%
+      rgba(211, 126, 14, 0.589) 0%,
+      rgba(151, 109, 2, 0.322) 10%,
+      rgba(170, 70, 3, 0.6) 100%
     ),
     url(/assets/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -100,6 +107,8 @@
 }
 .container {
   width: 1200px;
+  animation-name: showIcons;
+  animation-duration: 2s;
 }
 .headerText {
   font-size: 9vh;
@@ -126,4 +135,45 @@
   align-items: center;
   font-weight: bold;
   font-size: 2.5vh;
+}
+
+.containerBlock {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  height: 700px;
+}
+.containerCenter {
+  padding-top: 150px;
+  text-align: center;
+}
+.subHeader {
+  padding-bottom: 50px;
+}
+@keyframes showIcons {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes floatingMode {
+  0% {
+    transform: translateY(20px);
+    animation-name: floatingMode;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
 }
