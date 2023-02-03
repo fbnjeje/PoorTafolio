@@ -4,8 +4,10 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
 }
-.sideBar {
+.sideBar,
+.containerRightSideBar {
   position: absolute;
   display: flex;
   width: 120px;
@@ -20,10 +22,12 @@
   display: flex;
   text-decoration: none;
   justify-content: center;
-  margin: 10px;
 }
-.logoBegin i,
-a {
+.sideBarIcons {
+  display: grid;
+  gap: 20px;
+}
+.logoBegin i {
   padding-top: 20px;
 }
 .logoBegin i {
@@ -38,16 +42,89 @@ a {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-.block {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0 20px 0;
+
+.sideBarRight {
+  position: absolute;
+  width: 120px;
+  height: 100vh;
+  right: 0;
+  padding-start: 60px;
 }
-.block h1 {
-  flex-wrap: wrap;
+.containerRightSideBar {
+  flex-direction: column;
+  padding-bottom: 0;
 }
-.BG {
-  background-image: url(/assets/hero-bg.jpg);
+.hamburguerMenu {
+  padding-left: 20px;
+}
+.menu p {
+  width: 120px;
+  height: 90px;
+  background-color: aquamarine;
+  flex-direction: row;
+}
+.scrollDown {
+  width: 130px;
+  height: 20px;
+  transform: rotate(90deg);
+  margin-bottom: 60px;
+  padding-top: 50px;
+  cursor: pointer;
+}
+.hamburguerMenu .bx {
+  font-size: 5vh;
+  margin-top: 20px;
+}
+
+.parent {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 196, 13, 0.2) 0%,
+      rgba(253, 190, 29, 0.5) 10%,
+      rgba(242, 115, 30, 0.6) 100%
+    ),
+    url(/assets/hero-bg.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.son {
+  display: grid;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+.container {
+  width: 1200px;
+}
+.headerText {
+  font-size: 9vh;
+}
+.headerSubText {
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.buttonParent {
+  display: flex;
+  justify-content: center;
+}
+.buttonSon {
+  display: flex;
+  margin-top: 50px;
+  border: 5px solid white;
+  width: 200px;
+  height: 60px;
+  text-decoration: none;
+  color: white;
+  font-size: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2.5vh;
 }
