@@ -193,36 +193,13 @@
 .subHeader {
   padding-bottom: 50px;
 }
+
 .containerIntereses {
   width: 100%;
   height: 831px;
   margin-bottom: 50px;
 }
 
-.whiteArea,
-.blackArea {
-  gap: 200px;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10vh;
-}
-.blackArea {
-  color: black;
-  background-color: white;
-}
-.whiteArea {
-  color: white;
-  background-color: black;
-}
-.paddingBottom {
-  padding-bottom: 50px;
-}
-.interesesHeader {
-  text-align: center;
-}
 @keyframes showIcons {
   0% {
     opacity: 0;
