@@ -194,15 +194,20 @@
   padding-bottom: 50px;
 }
 
+.carrusel {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
 .carruselItems {
   display: flex;
   overflow-x: scroll;
   width: 100%;
+  gap: 200px;
 }
 .carruselItem {
-  min-width: 300px;
-  max-width: 300px;
-  height: 300px;
+  min-width: 400px;
+  max-width: 400px;
+  height: 400px;
 }
 
 .carruselItem img {
